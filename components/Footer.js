@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-       <footer style={{height: "800px", width: "100%", backgroundColor: "brown"}} >
+       <footer style={{height: "700px", width: "100%", backgroundColor: "brown"}} >
         <br/>
         <br/>
         <br/>
@@ -36,7 +36,14 @@ const Footer = () => {
                 <div class="col" style={{color: "white"}}>
                 
                 </div>
-                <div class="col"></div>
+                <div class="col-4">
+                    <a href="https://www.facebook.com/A.J.RufusMinistries/"><img style={{width: "50px", height: "50px"}} src="/images/facebook.png"/></a>
+                    <a href="https://www.instagram.com/a.j.rufus_ministries"><img style={{width: "50px", height: "50px"}} src="/images/instagram.jpg"/></a>
+                    <a href="https://pin.it/7MmBlMN"><img style={{width: "50px", height: "50px"}} src="/images/Pinterest-icon.png"/></a>
+                    <a href="https://twitter.com/rufusjacob6?t=ENqPnJNm2RIdp3SM_9J6qw&s=09"><img style={{width: "50px", height: "50px"}} src="/images/Twitter-featured.png"/></a>
+                    <a href="https://youtube.com/channel/UCdKhL9BfCk-PochPLjgVqOQ"><img style={{width: "70px", height: "50px"}} src="/images/Youtube-logo.png"/></a>
+                    <a href="https://www.tiktok.com/@ajrufus?_t=8cYY5vHwVPS&_r=1"><img style={{width: "70px", height: "50px"}} src="/images/tiktok.png"/></a>
+                </div>
                 <div class="col"></div>
 
 

@@ -13,22 +13,7 @@ import { useEffect } from 'react';
 import AdditionalInfo from '../components/AdditionalInfo';
 
 export default function Home() {
-  const { state, dispatch } = useContext(Store);
-  const { cart } = state;
-  
-  const addToCartHandler = async (product) => {
-    const existItem = cart.cartItems.find((x) => x._id === product._id);
-    const quantity = existItem ? existItem.quantity + 1 : 1;
-    const { data } = await axios.get(`/api/products/${product._id}`);
-
-    if (data.countInStock < quantity) {
-      return toast.error('Sorry. Product is out of stock');
-    }
-    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
-
-    toast.success('Product added to the cart');
-  };
-
+ 
   useEffect(() => {
     AOS.refresh(); // Refresh AOS whenever your component re-renders or new content is added dynamically
   });
@@ -56,17 +41,19 @@ export default function Home() {
       }
 
   return (
-    <div className='container'>
-      <Head>
+    <>
+    <Head>
         <title>Tcoan</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
+      
+    <Slide/>
+    <div className='container'>
+      
 
       
       <Row>
-        <Col md={12} xl={12}>
-          <Slide/>
-        </Col> 
+        
 
         <Col md={6}>
           <br/>
@@ -240,7 +227,7 @@ Become a partner today and join our man of God in propagating the word of God
       <AdditionalInfo/>
       
     </div>
-
+    </>
     
   )
 }

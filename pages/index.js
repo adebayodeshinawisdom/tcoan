@@ -46,7 +46,7 @@ export default function Home() {
         <title>Tcoan</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      
+
     <Slide/>
     <div className='container'>
       
@@ -83,7 +83,7 @@ export default function Home() {
         </Col>
 
         <Col sm={12} md={4} xl={4}>
-          <Card.Img data-aos="fade-up" src="/images/watch-videos.png"/>
+          <Card.Img data-aos="fade-up" src="/images/Watch-Videos.png"/>
         </Col>
 
         <Col sm={12} md={4} xl={4}>

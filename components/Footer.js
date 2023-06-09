@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-       <footer style={{height: "700px", width: "100%", backgroundColor: "brown"}} >
+       <footer style={{height: "800px", width: "100%", backgroundColor: "brown"}} >
         <br/>
         <br/>
         <br/>

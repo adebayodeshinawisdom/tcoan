@@ -2,6 +2,7 @@
 import '../style/index.css'
 import Header from './../components/Header'
 import Footer from './../components/Footer'
+import Banner from './../components/Banner'
 import Head from 'next/head'
 import { StoreProvider } from './../utils/Store';
 import { SessionProvider, useSession } from 'next-auth/react';
@@ -29,6 +30,7 @@ import 'aos/dist/aos.css';
   
   <SessionProvider session={session}>
   <StoreProvider>
+  <Banner/>
   <Header/>
   {Component.auth ? (
           <Auth adminOnly={Component.auth.adminOnly}>

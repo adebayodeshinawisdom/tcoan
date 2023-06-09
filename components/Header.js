@@ -67,21 +67,26 @@ const Header = () => {
     <Navbar   variant="light" expand="lg" style={{color: "white"}} collapseOnSelect>
         
         <Container>
-        <NavbarBrand><Link href="/"><span style={{color: 'brown'}}>TCOAN -</span><span style={{color: "black", textDecoration: "none", fontWeight: "bolder"}}>The Temple Church Of All Nations</span></Link></NavbarBrand>
+        <NavbarBrand><Link href="/"><span style={{color: 'brown'}}><img src="/images/logo2.jpg" width="70px" height="50px"/></span><span style={{color: "black", textDecoration: "none",}}>The Temple Church Of All Nations <br/> <span style={{fontSize: "14px",}}>Changing lives, changing nations and making it happen</span></span></Link></NavbarBrand>
         <Navbar.Toggle/>
         <Navbar.Collapse id='basic-navbar-nav'>
 
         <Nav className='ml-auto'>
         <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/">About Us</Nav.Link>
-        <Nav.Link href="/">Contact Us</Nav.Link>
-        <Nav.Link href="/cart">
+        
+        <NavDropdown title="About us" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/about">About TCOAN</NavDropdown.Item>
+            <NavDropdown.Item href="/pastorAJRufus">Pastor AJ Rufus</NavDropdown.Item>
+           
+          </NavDropdown>
+        <Nav.Link href="/contact">Contact Us</Nav.Link>
+        <Nav.Link href="/prayerrequest">
          Prayer Request
          
         </Nav.Link>
         
-        <Nav.Link href="/">Live Service</Nav.Link>
-        <Nav.Link href="/">Partnership</Nav.Link>
+        <Nav.Link href="/liveservice">Live Service</Nav.Link>
+        <Nav.Link href="/partnership">Partnership</Nav.Link>
 
 
         </Nav>

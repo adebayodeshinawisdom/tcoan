@@ -20,14 +20,11 @@ const about = () => {
           <Col md={6}>
             <br/>
             <br/>
-            <h1>About Us</h1>
+            <h1>Pastor A J Rufus</h1>
             <hr/>
           <p data-aos="fade-up">
 
-The Temple Church Of All Nations (Tcoan).
-
-Is a bible-based ministry and spiritual organization.
-It is deliverance, healing, and prophetic ministries. Headed by the spiritual leader Pastor AJ Rufus.
+          Pastor A. J. Rufus is the General Overseer of The Temple church of All Nations. He’s a faith healer, deliverance minister and a Prophet. The church is situated at 1617 Alwyn Road, Pretoria South Africa.
 </p>
           </Col>
         </Row>

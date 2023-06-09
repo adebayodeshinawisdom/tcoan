@@ -10,6 +10,7 @@ import { Store } from './../utils/Store';
 import Slide from '../components/Slide';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import AdditionalInfo from '../components/AdditionalInfo';
 
 export default function Home() {
   const { state, dispatch } = useContext(Store);
@@ -31,7 +32,28 @@ export default function Home() {
   useEffect(() => {
     AOS.refresh(); // Refresh AOS whenever your component re-renders or new content is added dynamically
   });
+      const sectionStyle = {
+        backgroundImage: "url('/images/background1.jpeg')",
+        backgroundColor: 'rgba(255, 255, 255,0.8)',
+        width: "700px",
+        height: '800px',
+        
 
+      }
+      const writeUpStyle = {
+        textShadow: '1px 1px 1px rgba(0, 0, 0, 0.5)',
+       color: 'white'
+      
+      }
+      const overlayStyle = {
+        content: "''",
+        position: 'relative',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'rgba(0,0,0,0.5)',
+      }
 
   return (
     <div className='container'>
@@ -74,7 +96,7 @@ export default function Home() {
         </Col>
 
         <Col sm={12} md={4} xl={4}>
-          <Card.Img data-aos="fade-up" src="/images/watch-Videos.png"/>
+          <Card.Img data-aos="fade-up" src="/images/watch-videos.png"/>
         </Col>
 
         <Col sm={12} md={4} xl={4}>
@@ -128,12 +150,98 @@ Prov.24:5 –A wise man is strong; yea, a man of knowledge increaseth strength.
 
 A wise man said that destiny is like stock exchange – it changes per day based on the value attached to it. Don’t be deceived that you will still be in the same level with your classmates or peers in the future because twenty children don’t play together for twenty years. By destiny, you are not rated the same with your peers.
 </p>
+
+<Button className="btn btn-outline text-center">Sign up as a Partner</Button>
           </div>
         </Col>
-      </Row>      
+      </Row> 
+      <br/>
+      <br/>     
+        <Row>
+            <Col md={4}>
+              <img src="/images/pst4.jpeg" style={{borderRadius: "100px", width: "150px", height: '150px' }}/>
+          </Col>
 
+          <Col md={7}>
+              <p>
+
+              “Champions are not crowned for desiring
+to be crowned, champions are crown for winning their battles” “Your dream is your personal prophecy”
+“Even marriages made in Heaven need earthly maintenance” “Do a little bits of good in the environment
+you’re, it’s those little bits of good that will overwhelm the world” “The difference between God and
+human is that God gives and forgives while human gets and forgets”
+              </p>
+          </Col>
+
+
+
+        </Row>
+
+        <div className="text-center">
+          <h1 style={{fontSize: "80px", fontFamily: "impact"}}>GET <br/> INVOLVED</h1>
+
+          <p>Get involved today in helping our man of God fulful the <br/> mission of this great commission in making Heaven and <br/> to take as many as possible.</p>
+        </div>
+        <br/>
+        <br/>
+       <Row>
+       <p className="col-4 text-center">
+OUR MISSION<br/>
+
+Is to depopulate the kingdom of Darkness and to populate the kingdom of God.
+</p>
+<p className='col-4 text-center'>
+OUR VISION <br/>
+
+Is to make Heaven and to take as many as possible.
+</p>
+
+<p className='col-4 text-center'>
+BECOME A PARTNER<br/>
+
+Become a partner today and join our man of God in propagating the word of God
+</p>
+</Row>
+<br/>
+<br/>
+<div className='container' style={sectionStyle}>
+    <div style={overlayStyle}>
+
+      <div style={writeUpStyle}>
+        <Row>
+          
+
+          <Col md={6}>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Card.Img src="/images/testimony.jpeg"/>
+          </Col>
+
+          <Col md={6}>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h1 style={{fontSize: '60px'}}>Do you have a Testimony?</h1>
+            <br/>
+            <p>Remember whenever you testify of the goodness of God the devil flee and he is defeated</p>
+              <Button className="btn btn-outline">Share your Testimony</Button>
+          </Col>
+
+        </Row>
+
+      </div>
+    </div>
+
+</div>
+
+      <AdditionalInfo/>
       
     </div>
+
+    
   )
 }
 

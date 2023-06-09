@@ -20,14 +20,16 @@ const about = () => {
           <Col md={6}>
             <br/>
             <br/>
-            <h1>About Us</h1>
+            <h1>Contact Us</h1>
             <hr/>
           <p data-aos="fade-up">
 
-The Temple Church Of All Nations (Tcoan).
 
-Is a bible-based ministry and spiritual organization.
-It is deliverance, healing, and prophetic ministries. Headed by the spiritual leader Pastor AJ Rufus.
+
+          <span><i className='fa fa-map-marker'></i> Veldman Ave, Hans Coverdale Rd Eersterust. Pretoria, South Africa 0001</span>
+          <br/>
+          <span><i className="fa fa-phone"></i> +27639172279</span>
+
 </p>
           </Col>
         </Row>

@@ -96,35 +96,6 @@ const Header = () => {
 
     </Navbar>
 
-    <div className="container-fluid shadow p-3 mb-5 bg-body rounded">
-   
-    <Container>
-    
-    <Row>
-
-      <Col md={2} sm={6}>
-       
-       </Col>
-
-      <Col md={7} sm={6}>
-      
-      </Col>
-
-      <Col md={3} sm={6}>
-        
-      
-      </Col>    
-    
-    
-        
-      
-    </Row>
-    </Container>
-
-     
-
-    
-    </div>
       
     </>
   )

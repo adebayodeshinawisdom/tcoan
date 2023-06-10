@@ -67,7 +67,7 @@ const Header = () => {
     <Navbar   variant="light" expand="lg"  style={{color: "white"}} collapseOnSelect>
         
         <Container>
-        <NavbarBrand><Link href="/"><span style={{color: 'brown'}}><img src="/images/logo2.jpg" width="70px" height="50px"/></span><span style={{color: "black", textDecoration: "none", marginBottom: '0'}}>The Temple Church Of All Nations  </span> <br/><span style={{fontSize: "14px",marginLeft: '70px', marginTop: '1px', paddingTop: '0', color: 'black'}}>Changing lives, changing nations and making it happen</span></Link></NavbarBrand>
+        <NavbarBrand><Link href="/"><span style={{color: 'brown'}}><img src="/images/logo2.jpg" width="70px" height="50px"/></span><span style={{color: "black", textDecoration: "none", marginBottom: '0', fontSize: '16px'}}>The Temple Church Of All Nations  </span> <br/><span style={{fontSize: "11px",marginLeft: '70px', marginTop: '1px', paddingTop: '0', color: 'black'}}>Changing lives, changing nations and making it happen</span></Link></NavbarBrand>
         <Navbar.Toggle/>
         <Navbar.Collapse id='basic-navbar-nav'>
 

@@ -15,10 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Tcoan</title>
-        <link rel="icon" href="/favicon-32x32.png" />
-      </Head>
+     
 
       <Container>
         <Row>

@@ -5,6 +5,7 @@ import AdditionalInfo from '../components/AdditionalInfo';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   const router = useRouter();
@@ -15,9 +16,12 @@ export default function Home() {
 
   return (
     <>
-     
+      <Head>
+        <title>Tcoan</title>
+        <link rel="icon" href="/favicon-32x32.png" />
+      </Head>
 
-      <Container>
+      <Container fluid>
         <Row>
           <Col>
             <Slide />
@@ -25,14 +29,14 @@ export default function Home() {
         </Row>
 
         <Row>
-          <Col md={6}>
+          <Col sm={12}>
             <h1 data-aos="fade-up" style={{ textTransform: "uppercase", textAlign: "center" }}>Welcome to the Temple Church of All Nations</h1>
             <br />
             <p data-aos="zoom-in" style={{ textAlign: "center" }}>The Temple Church Of All Nations (Tcoan) is a Bible-based ministry and spiritual organization. It’s a deliverance, healing, and prophetic ministry, headed by the spiritual leader Pastor A.J. Rufus.
             Pastor A. J. Rufus is the General Overseer of The Temple Church of All Nations. He’s a faith healer, deliverance minister, and a Prophet.</p>
           </Col>
 
-          <Col md={6}>
+          <Col sm={12}>
             <Card>
               <Card.Body>
                 <Card.Img data-aos="fade-left" src="/images/homepage1.jpg" />
@@ -41,27 +45,20 @@ export default function Home() {
           </Col>
         </Row>
 
-        
-
         <Row>
-          <Col>
+          <Col sm={4}>
             <Card.Img data-aos="fade-right" src="/images/watch-us-live.jpg" />
           </Col>
-          <Col>
+          <Col sm={4}>
             <Card.Img data-aos="fade-up" src="/images/Watch-Videos.png" />
           </Col>
-
-          <Col>
+          <Col sm={4}>
             <Card.Img data-aos="fade-left" src="/images/give-live.jpg" />
           </Col>
         </Row>
 
-        
-
-       
-
         <Row>
-          <Col md={6}>
+          <Col sm={6}>
             <br />
             <br />
             <h1 style={{ color: 'brown', textAlign: 'center' }}><i className='fas fa-calendar'></i></h1>
@@ -74,7 +71,7 @@ export default function Home() {
             <p style={{ textAlign: 'center' }}>Counselling</p>
           </Col>
 
-          <Col md={6}>
+          <Col sm={6}>
             <br />
             <br />
             <div>
@@ -93,10 +90,10 @@ export default function Home() {
         </Row>
 
         <Row>
-          <Col md={4}>
+          <Col sm={4}>
             <img src="/images/pst4.jpeg" style={{ borderRadius: "100px", width: "150px", height: '150px' }} />
           </Col>
-          <Col md={8}>
+          <Col sm={8}>
             <p>
               “Champions are not crowned for desiring to be crowned, champions are crowned for winning their battles.”
               “Your dream is your personal prophecy.”
@@ -114,15 +111,15 @@ export default function Home() {
         <br />
         <br />
         <Row>
-          <p className="col-12 col-md-4 text-center">
+          <p className="col-12 col-sm-4 text-center">
             OUR MISSION<br />
             Is to depopulate the kingdom of Darkness and to populate the kingdom of God.
           </p>
-          <p className='col-12 col-md-4 text-center'>
+          <p className='col-12 col-sm-4 text-center'>
             OUR VISION <br />
             Is to make Heaven and to take as many as possible.
           </p>
-          <p className='col-12 col-md-4 text-center'>
+          <p className='col-12 col-sm-4 text-center'>
             BECOME A PARTNER<br />
             Become a partner today and join our man of God in propagating the word of God.
           </p>

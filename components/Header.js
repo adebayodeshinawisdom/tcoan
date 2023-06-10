@@ -64,7 +64,7 @@ const Header = () => {
   return (
     <>
     <ToastContainer position="bottom-center" limit={1} />
-    <Navbar   variant="light" expand="lg"  style={{color: "white"}}>
+    <Navbar   variant="light" expand="lg"  style={{color: "white"}} collapseOnSelect>
         
         <Container>
         <NavbarBrand><Link href="/"><span style={{color: 'brown'}}><img src="/images/logo2.jpg" width="70px" height="50px"/></span><span style={{color: "black", textDecoration: "none",}}>The Temple Church Of All Nations <br/> <span style={{fontSize: "14px",}}>Changing lives, changing nations and making it happen</span></span></Link></NavbarBrand>

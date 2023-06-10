@@ -64,7 +64,7 @@ const Header = () => {
   return (
     <>
     <ToastContainer position="bottom-center" limit={1} />
-    <Navbar   variant="light" expand="lg"  style={{color: "white"}} collapseOnSelect>
+    <Navbar   variant="light" expand="lg"  style={{color: "white"}}>
         
         <Container>
         <NavbarBrand><Link href="/"><span style={{color: 'brown'}}><img src="/images/logo2.jpg" width="70px" height="50px"/></span><span style={{color: "black", textDecoration: "none",}}>The Temple Church Of All Nations <br/> <span style={{fontSize: "14px",}}>Changing lives, changing nations and making it happen</span></span></Link></NavbarBrand>
@@ -96,6 +96,35 @@ const Header = () => {
 
     </Navbar>
 
+    <div className="container-fluid shadow p-3 mb-5 bg-body rounded">
+   
+    <Container>
+    
+    <Row>
+
+      <Col md={2} sm={6}>
+       
+       </Col>
+
+      <Col md={7} sm={6}>
+      
+      </Col>
+
+      <Col md={3} sm={6}>
+        
+      
+      </Col>    
+    
+    
+        
+      
+    </Row>
+    </Container>
+
+     
+
+    
+    </div>
       
     </>
   )

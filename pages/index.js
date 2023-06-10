@@ -23,8 +23,11 @@ export default function Home() {
       
 
       <Container>
-      <Slide />
+      
         <Row>
+          <Col md={12}>
+          <Slide />
+          </Col>
           <Col md={6}>
             <h1 data-aos="fade-up" style={{ textTransform: "upperCase" }}>Welcome to the Temple Church of All Nations</h1>
             <br />

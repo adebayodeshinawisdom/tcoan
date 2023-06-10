@@ -11,9 +11,9 @@ import Slide from '../components/Slide';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import AdditionalInfo from '../components/AdditionalInfo';
-
+import { useRouter } from 'next/router';
 export default function Home() {
- 
+ const  router  = useRouter()
   useEffect(() => {
     AOS.refresh(); // Refresh AOS whenever your component re-renders or new content is added dynamically
   });
@@ -138,7 +138,7 @@ Prov.24:5 –A wise man is strong; yea, a man of knowledge increaseth strength.
 A wise man said that destiny is like stock exchange – it changes per day based on the value attached to it. Don’t be deceived that you will still be in the same level with your classmates or peers in the future because twenty children don’t play together for twenty years. By destiny, you are not rated the same with your peers.
 </p>
 
-<Button className="btn btn-outline text-center">Sign up as a Partner</Button>
+<Button className="btn btn-outline text-center" onClick={() => router.push('/partnership')}>Sign up as a Partner</Button>
           </div>
         </Col>
       </Row> 

@@ -1,8 +1,9 @@
 import { Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-
+import { useRouter } from 'next/router';
 
 function DarkVariantExample() {
+  const  router  = useRouter()
     const captionStyle = {
         position: 'absolute',
         top: '50%',
@@ -24,8 +25,8 @@ function DarkVariantExample() {
 />
 
 <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
+<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
   
 
 </Carousel.Caption>
@@ -41,9 +42,9 @@ function DarkVariantExample() {
       
     />
 <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
-  
+<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
+    
       
     
     </Carousel.Caption>
@@ -61,9 +62,9 @@ function DarkVariantExample() {
       
     />
 <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
-  
+<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
+    
     
     </Carousel.Caption>
     
@@ -80,9 +81,9 @@ function DarkVariantExample() {
     />
     
     <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
-  
+    <Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
+    
     
     </Carousel.Caption>
 
@@ -98,9 +99,9 @@ function DarkVariantExample() {
       
     />
          <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
-  
+         <Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
+    
     
     </Carousel.Caption>
     
@@ -117,9 +118,9 @@ function DarkVariantExample() {
     />
     
     <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
-  
+    <Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
+    
     
     </Carousel.Caption>
 
@@ -137,9 +138,9 @@ function DarkVariantExample() {
     />
     
 <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
-  
+<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
+    
     
     </Carousel.Caption>
 
@@ -155,9 +156,9 @@ function DarkVariantExample() {
     />
             
             <Carousel.Caption style={captionStyle}>
-<Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg'> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
-<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg'> Watch Live</Button>
-  
+            <Button style={{backgroundColor: '#fff', color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/partnership')}> Online Giving <i className="fas fa-arrow-right"></i></Button> &nbsp;
+<Button style={{backgroundColor: "#fff", color: 'black', border: "#fff"}} className='btn btn-lg' onClick={() => router.push('/liveservice')}> Watch Live</Button>
+    
     
     </Carousel.Caption>
     

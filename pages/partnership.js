@@ -9,7 +9,7 @@ const about = () => {
   <div>
     
 
-    <div style={{backgroundImage: "url('/images/onlinegiving.png')", height: "100px"}}>
+    <div style={{backgroundImage: "url('/images/pst2.jpeg')", height: "300px"}}>
 
 
     </div>
